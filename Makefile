@@ -1,12 +1,12 @@
 src = $(wildcard *.c)
 obj = $(patsubst %.c, %, $(src))
 
-args = -Wall -g
+args = -Wall -g -lrt
 
 ALL: $(obj)
 
 $(obj): %: %.c
-	gcc $< -o $@ $(args)
+	g++ $< -o $@ $(args)
 
 clean:
 	rm -rf $(obj)

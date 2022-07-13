@@ -25,7 +25,7 @@
 #define BUFFER_SIZE 1024
 #define FD_LIMIT 65535
 #define MAX_EVENT_NUMBER 1024
-#define PROCESS_LIMIT 65536
+#define PROCESS_LIMIT 4194305 //pid最大取值
 
 struct client_data
 {
